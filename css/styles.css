@@ -1,0 +1,67 @@
+body{
+    background-color: #d1dbfa;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.layout{
+    width:100%;
+    display: grid;
+    grid-template-areas:
+    "header header header header"  
+    "navBar navBar navBar navBar"
+    "content content content aside"
+    "footer footer footer footer";
+    grid-template-rows: 100px 70px auto 70px;
+
+}
+
+.header{
+    grid-area: header;
+    background-color: white;
+    text-align:left;
+    font-size: italic;
+    border: black;
+
+
+}
+.logo{
+    background: linear-gradient(90deg, #03228f 10%, #0e73e4 100%);
+    width: 40px;
+    height: 40px;
+    border-radius:300px;
+}
+
+.play{
+    width: 0px;
+    height: 0px;
+    margin-top : 15px;
+    border-left: 12px solid white;
+    border-top: 6px solid transparent;
+}
+.navBar{
+    grid-area: navBar;
+    border: 5px solid blueviolet;
+    background-color: lightgoldenrodyellow;
+}
+
+.content{
+    grid-area: content;
+    border: 5px solid royalblue;
+    background-color: brown;
+}
+
+
+.aside{
+    grid-area: aside;
+    border: 5px solid blue;
+    background-color: violet;
+}
+
+.footer{
+    grid-area: footer;
+    border: 5px solid red;
+    background-color: lightgrey;
+}
